@@ -85,7 +85,7 @@ func hasSSHRemoteBaseURL(kFiles []string) (bool, error) {
 
 // runKustomizeBuild will run `kustomize build` cmd and return generated yaml or error
 func runKustomizeBuild(ctx context.Context, cwd string, env []string) (string, error) {
-	k := exec.CommandContext(ctx, "kustomize", "build", ".")
+	k := exec.CommandContext(ctx, "kustomize", "build", ".", "--enable-helm")
 
 	k.Dir = cwd
 	k.Env = env
