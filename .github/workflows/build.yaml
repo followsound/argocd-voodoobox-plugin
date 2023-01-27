@@ -2,6 +2,8 @@ name: Create and publish a container image
 
 on:
   push:
+    branches:
+      - "*"
     tags:
       - "v*"
   pull_request:
