@@ -1,9 +1,6 @@
 name: Create and publish a container image
 
 on:
-  push:
-    tags:
-      - "v*"
   pull_request:
     types:
       - opened
