@@ -8,7 +8,7 @@ on:
     types:
       - opened
     branches:
-      - 'releases/**'
+      - 'master'
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
