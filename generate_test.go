@@ -14,6 +14,7 @@ func Test_hasSSHRemoteBaseURL(t *testing.T) {
 	}{
 		{"with remote base", args{"./testData/app-with-remote-base"}, true, false},
 		{"without remote base", args{"./testData/app-with-secrets"}, false, false},
+		{"with helm base", args{"./testData/app-with-helm"}, false, false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
