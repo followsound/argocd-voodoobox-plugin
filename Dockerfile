@@ -16,7 +16,7 @@ RUN os=$(go env GOOS) && arch=$(go env GOARCH) \
   && chmod +x /usr/local/bin/kustomize \
   && curl -Ls https://github.com/uw-labs/strongbox/releases/download/v${STRONGBOX_VERSION}/strongbox_${STRONGBOX_VERSION}_${os}_${arch} \
   > /usr/local/bin/strongbox \
-  && chmod +x /usr/local/bin/strongbox
+  && chmod +x /usr/local/bin/strongbox \
   && curl -O https://get.helm.sh/helm-${HELM_VERSION}-${os}-${arch}.tar.gz \
   && tar -xf helm-${HELM_VERSION}-${os}-${arch}.tar.gz \
   && cp ${os}-${arch}/helm /usr/local/bin/helm \
