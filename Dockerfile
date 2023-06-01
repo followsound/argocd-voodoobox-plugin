@@ -6,7 +6,7 @@ LABEL org.opencontainers.image.description = "An Argo CD plugin to decrypt stron
 
 ENV \
   STRONGBOX_VERSION=1.1.0 \
-  KUSTOMIZE_VERSION=v5.0.0 \
+  KUSTOMIZE_VERSION=v5.0.3 \
   HELM_VERSION=v3.12.0
 
 RUN os=$(go env GOOS) && arch=$(go env GOARCH) \
